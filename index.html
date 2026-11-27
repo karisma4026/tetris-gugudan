@@ -8,7 +8,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-title" content="놀이방" />
-<meta name="description" content="담우와 아빠가 함께 노는 놀이방 — 구구단 테트리스와 그림동화책을 한 곳에서." />
+<meta name="description" content="담우와 아빠가 함께 노는 놀이방 — 만화영화, 구구단 테트리스, 그림동화책을 한 곳에서." />
 <title>담우 &amp; 아빠 놀이방</title>
 <style>
   :root{
@@ -130,6 +130,10 @@
     .cards{grid-template-columns:1fr 1fr}
   }
 
+  @media (min-width:1040px){
+    .cards{grid-template-columns:1fr 1fr 1fr}
+  }
+
   .card{
     position:relative;
     display:flex;
@@ -169,6 +173,10 @@
 
   .card--story{
     background:linear-gradient(150deg, #f7a53a 0%, #f0763f 52%, #e0506b 100%);
+  }
+
+  .card--movie{
+    background:linear-gradient(150deg, #241444 0%, #4c1f4f 46%, #8f2f4b 100%);
   }
 
   .card .top{
@@ -235,6 +243,7 @@
   }
 
   .card--story .go{color:#8a2f18}
+  .card--movie .go{color:#4a1234}
 
   .go .arrow{
     display:inline-block;
@@ -289,6 +298,18 @@
         <p>담우를 위한 자동차 정리 · 잠자리 그림동화.</p>
       </div>
       <span class="go">읽으러 가기 <span class="arrow" aria-hidden="true">→</span></span>
+    </a>
+
+    <a class="card card--movie" href="./story-movie.html">
+      <div class="top">
+        <span class="emoji" aria-hidden="true">🎬</span>
+        <span class="badge">만화영화</span>
+      </div>
+      <div>
+        <h2>루루, 주차하자! 만화영화</h2>
+        <p>그림이 움직이고, 목소리로 읽어 주는 만화영화 버전.</p>
+      </div>
+      <span class="go">보러 가기 <span class="arrow" aria-hidden="true">→</span></span>
     </a>
   </nav>
 

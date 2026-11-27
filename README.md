@@ -1,6 +1,7 @@
 ## 바로 열기
 
 - 🏠 [전체 모음집 (홈)](https://karisma4026.github.io/tetris-gugudan/)
+- 🎬 [만화영화 〈루루, 주차하자!〉](https://karisma4026.github.io/tetris-gugudan/story-movie.html)
 - 🎮 [구구단 테트리스](https://karisma4026.github.io/tetris-gugudan/tetris.html)
 - 📖 [담우 동화책 〈루루, 주차하자!〉](https://karisma4026.github.io/tetris-gugudan/story.html)
 
@@ -9,7 +10,17 @@
 # 담우 & 아빠 놀이방
 
 스마트폰·태블릿에서 바로 여는, 담우와 아빠의 놀이 모음집.
-홈(`index.html`)에서 두 가지 놀이를 한 번에 골라 들어갑니다.
+홈(`index.html`)에서 세 가지 놀이를 한 번에 골라 들어갑니다.
+
+## 0. 🎬 루루, 주차하자! 만화영화 — [story-movie.html](https://karisma4026.github.io/tetris-gugudan/story-movie.html)
+
+같은 이야기를 **만화영화처럼** 보는 버전입니다.
+
+- 그림이 천천히 다가가고 물러나는 카메라 움직임(켄 번스), 장면마다 반짝이·먼지·하트·zzz 효과
+- 화면 아래 영화 자막처럼 한 문장씩 또박또박 나오고, **한국어 목소리**가 그 문장을 읽어 줍니다
+- 큰 `▶ 만화영화 시작` 버튼으로 시작 (아이폰·아이패드에서 소리가 나도록)
+- 조작: ⏮ 이전 장면 · ▶/❚❚ 재생·멈춤 · ⏭ 다음 장면 · 🔊 소리 · 속도(느리게/보통/빠르게) · ↻ 처음부터 · 🏠 놀이방 홈
+- 화면을 살짝 누르면 멈춤/재생, 옆으로 밀면 장면이 넘어갑니다
 
 ## 1. 🎮 구구단 테트리스 — [tetris.html](https://karisma4026.github.io/tetris-gugudan/tetris.html)
 
@@ -33,6 +44,7 @@
 | `index.html` | 모음집 홈 (모바일·태블릿 반응형 카드 화면) |
 | `tetris.html` | 구구단 테트리스 게임 |
 | `story.html` | 그림동화책 〈루루, 주차하자!〉 |
+| `story-movie.html` | 만화영화 버전 〈루루, 주차하자!〉 (움직임 + 자막 + 목소리) |
 
 외부 라이브러리나 CDN 없이 각 페이지가 단일 HTML 파일로 동작합니다.
 개인정보를 수집하지 않습니다.
