@@ -71,12 +71,6 @@
   @media (max-height:520px){
     .theater{gap:4px}
     .stage{ --chrome:74px; }
-    .controls{flex-direction:row; justify-content:center; flex-wrap:wrap; gap:6px; max-width:none}
-    .row1{width:auto}
-  }
-  @media (max-width:420px){
-    .chip{padding:7px 10px; font-size:11px}
-    .row2{gap:5px}
   }
 
   .slides{position:absolute; inset:0; z-index:1; background:#0a0810}
@@ -158,6 +152,7 @@
     transition:opacity .45s ease;
   }
   .stage.ended .sub{opacity:0}
+  .stage:not(.started) .sub{opacity:0}
   .sub p{
     margin:0; max-width:32em; text-align:center;
     font-size:clamp(15px,3.5vw,23px); line-height:1.56; font-weight:650;
@@ -297,6 +292,14 @@
     .cbtn.main{width:50px;height:50px;font-size:18px}
     .chip{padding:6px 10px; font-size:11px}
     .row1, .row2{gap:6px}
+    .controls{flex-direction:row; flex-wrap:wrap; justify-content:center; gap:6px; max-width:none}
+    .row1{width:auto}
+  }
+  @media (max-width:430px){
+    .chip{padding:6px 9px; font-size:10.5px; gap:.28em}
+    .row2{gap:4px}
+    .dots{gap:5px}
+    .dot{width:7px;height:7px}
   }
   @media (prefers-reduced-motion:reduce){
     .slide.run{animation:none}
@@ -351,7 +354,7 @@
       <button class="chip" id="soundBtn" type="button" aria-pressed="true">🔊 소리 켬</button>
       <button class="chip" id="speedBtn" type="button">속도 보통</button>
       <button class="chip" id="restartBtn" type="button">↻ 처음부터</button>
-      <a class="chip" href="./">🏠 놀이방 홈</a>
+      <a class="chip" href="./">🏠 놀이방</a>
     </div>
   </div>
 </div>
